@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
+import backgroundImage from './gumho-bg.jpeg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src="/logo.jpeg" alt="Gum-Ho Logo" className="header-logo" />
         <h1>Gum-Ho</h1>
       </header>
-      <main className="App-content">
+      <main className="App-content" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="info-section">
           <p><strong>Телефон:</strong> 088 863 8903</p>
           <p><strong>Работно време:</strong></p>

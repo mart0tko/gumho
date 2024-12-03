@@ -1,24 +1,31 @@
-.App {
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
+@import "leaflet/dist/leaflet.css";
 
 .App-header {
+  display: flex;
+  align-items: center;
   background-color: #282c34;
-  padding: 20px;
+  padding: 10px 20px;
   color: white;
 }
 
+.header-logo {
+  height: 50px; /* Adjust size as needed */
+  width: auto;
+  margin-right: 20px;
+}
+
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .App-content {
   padding: 20px;
   text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
+  background-size: cover;
+  height: 100vh;
 }
 
 .info-section {
@@ -28,16 +35,10 @@ h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.info-section p,
-.info-section ul {
-  margin: 10px 0;
-}
 
-.info-section a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.info-section a:hover {
-  text-decoration: underline;
+/* Add spacing below the footer if needed */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6e6e6; /* Page background color */
 }
